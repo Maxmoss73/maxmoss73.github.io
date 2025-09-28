@@ -1,0 +1,142 @@
+/* Global styles for dark theme and centering */
+body {
+    background-color: #121212; /* Dark background */
+    color: #c0c0c0; /* Light gray text for contrast */
+    font-family: 'Times New Roman', Times, serif; /* Clean font */
+    margin: 0;
+    padding: 20px;
+    text-align: center; /* Centers all text by default */
+}
+
+/* Headings */
+h1, h2, h4 {
+    color: #ffffff; /* White for emphasis */
+}
+h3 {
+    color: #0059ff;
+}
+/* Paragraphs and sections */
+p, section {
+    max-width: 800px; /* Prevents super-wide text on large screens */
+    margin: 0 auto 20px; /* Centers blocks and adds spacing */
+}
+
+/* Box menu for navigation */
+nav {
+    background-color: #000000; /* Darker gray box */
+    border: 1px solid #555555; /* Subtle border */
+    border-radius: 0px;
+    padding: 50px;
+    width: fit-content; /* Shrinks to fit content */
+    margin: 20px auto; /* Centers the box */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: block; /* NEW: Makes links stack vertically */
+    margin: 15px 0; /* NEW: Vertical spacing between links */
+}
+
+nav a {
+    color: #b515ff; /* PURPLE links */
+    text-decoration: none; /* No underline by default */
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover for feedback */
+}
+
+nav h2 {  /* Change to nav p if it's a <p> tag, or add class if custom */
+    border-bottom: 1px solid #555555; /* Border between head and links */
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    color: #ffffff; /* White for consistency */
+}
+
+/* Links outside nav (e.g., back links or downloads) */
+a {
+    color: #b515ff; /* Blue for visibility on dark bg */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* MP3 list (if on music page) */
+ul {
+    list-style-type: none;
+    padding: 0px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+li {
+    margin-bottom: 10px;
+}
+nav li + li {
+    border-top: 1px solid #555555; /* Gray border divider */
+    padding-top: 20px; /* Space after the border */
+}
+
+img {
+    display: block; /* NEW: Makes image a block element for centering */
+    margin: 0 auto 10px; /* NEW: Centers image and adds space below */
+}
+
+/* Side images layout */
+.container {
+    display: flex; /* Enables side-by-side layout */
+    justify-content: space-between; /* Spaces elements evenly */
+    align-items: flex-start; /* Aligns tops of elements */
+    max-width: 1200px; /* Limits total width; adjust as needed */
+    margin: 0 auto; /* Centers the container */
+}
+
+.main-content {
+    flex: 1; /* Lets the content take most space */
+    margin: 0 20px; /* Adds breathing room between images and content */
+}
+
+#left-side-image {
+    width: 400px; /* Example: Smaller left side image */
+    height: auto;
+}
+
+#right-side-image {
+    width: 300px; /* Example: Larger right side image */
+    height: auto;
+    padding-right: 100px;
+}
+
+
+
+/* Optional: Stack vertically on small screens for better mobile view */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stacks top-to-bottom */
+        align-items: center; /* Centers when stacked */
+    }
+    
+    .main-content {
+        margin: 20px 0; /* Vertical spacing instead */
+    }
+    
+    .side-image {
+        margin-bottom: 20px; /* Space below images when stacked */
+    }
+}
+
+hr {
+    max-width: 200px;
+}
+
+#altdiv1 {
+    margin-bottom: 50px;
+}
