@@ -9,12 +9,10 @@ body {
 }
 
 /* Headings */
-h1, h2, h4 {
+h1, h2, h3, h4 {
     color: #ffffff; /* White for emphasis */
 }
-h3 {
-    color: #0059ff;
-}
+
 /* Paragraphs and sections */
 p, section {
     max-width: 800px; /* Prevents super-wide text on large screens */
@@ -135,6 +133,9 @@ img {
 
 hr {
     max-width: 200px;
+    border: none; /* Remove default border */
+    height: 2px; /* Set the height of the hr */
+    background-color: #0059ff; /* Set the background color */
 }
 
 #altdiv1 {
