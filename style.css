@@ -29,6 +29,11 @@ nav {
     margin: 20px auto; /* Centers the box */
 }
 
+#poem-box{
+    line-height: 5px;
+    text-align: left;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -44,6 +49,18 @@ nav a {
     color: #b515ff; /* PURPLE links */
     text-decoration: none; /* No underline by default */
     font-weight: bold;
+    font-size: 20px;
+}
+
+.newest-link {
+    color: #df0101;
+    font-weight: bold;
+    background-color: #000000; /* Darker gray box */
+    border: 1px solid #555555; /* Subtle border */
+    border-radius: 100px;
+    padding: 15px;
+    width: fit-content; /* Shrinks to fit content */
+    margin: 20px auto; /* Centers the box */
 }
 
 nav a:hover {
@@ -140,4 +157,8 @@ hr {
 
 #altdiv1 {
     margin-bottom: 50px;
+}
+
+.underline-text {
+  text-decoration: underline;
 }
