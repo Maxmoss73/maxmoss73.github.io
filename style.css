@@ -12,6 +12,10 @@ h1, h2, h3, h4 {
     color: #ffffff;
 }
 
+h5 {
+    color: #121212;
+}
+
 p, section {
     max-width: 800px;
     margin: 0 auto 20px;
@@ -59,6 +63,11 @@ nav a {
     width: fit-content;
     margin: 20px auto;
 }
+
+.secret-link {
+    color: #121212;
+}
+
 
 nav a:hover {
     text-decoration: underline;
